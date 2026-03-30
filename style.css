@@ -144,6 +144,10 @@ main {
     padding: 0 6% 4rem;
 }
 
+.page-content {
+    padding: 2rem 6% 4rem;
+}
+
 .section {
     padding: 2rem 0 4rem;
 }
@@ -157,6 +161,33 @@ main {
     max-width: 760px;
     line-height: 1.8;
     color: var(--muted);
+}
+
+.about-content {
+    max-width: 860px;
+}
+
+.about-content p {
+    font-size: 1.15rem;
+    line-height: 1.95;
+    color: #334155;
+    margin-bottom: 1.25rem;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+}
+
+.tag {
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    font-weight: 600;
 }
 
 .projects-grid {
@@ -191,6 +222,36 @@ main {
 
 .project-card p {
     margin: 0 0 1.4rem;
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.certificate-card {
+    background-color: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    scroll-margin-top: 120px;
+}
+
+.certificate-card h3 {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+
+.certificate-meta {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.certificate-card p {
+    margin: 0;
 }
 
 .form-box {
@@ -241,7 +302,8 @@ main {
 
 @media (max-width: 900px) {
     .hero,
-    .projects-grid {
+    .projects-grid,
+    .certificates-grid {
         grid-template-columns: 1fr;
     }
 
@@ -269,6 +331,7 @@ main {
 
     .site-header,
     main,
+    .page-content,
     .site-footer {
         padding-left: 5%;
         padding-right: 5%;
