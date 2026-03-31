@@ -254,6 +254,26 @@ main {
     margin: 0;
 }
 
+.contact-links {
+    margin-bottom: 1.5rem;
+}
+
+.contact-links p {
+    margin: 0 0 0.7rem;
+    font-size: 1.05rem;
+    color: #334155;
+}
+
+.contact-links a {
+    color: var(--accent-dark);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
 .form-box {
     max-width: 720px;
     background-color: var(--surface);
